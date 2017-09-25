@@ -1,0 +1,10 @@
+// RESTRICTIONS
+
+//redux-form
+// this only works with "redux-form": "5.3.3",
+// if you wont to use later versions check out this repo:
+//https://github.com/JaysQubeXon/auth-client
+
+
+cant get errors from server to display on webapp
+section 7 Lecture 112
