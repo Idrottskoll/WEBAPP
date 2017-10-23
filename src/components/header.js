@@ -11,7 +11,7 @@ class Header extends Component {
         <Link to="/signout" className="nav-link">Sign Out</Link>
       </li>
     } else {
-      return [ 
+      return [
         <li className="nav-item" key={1}>
           <Link to="/signin" className="nav-link">Sign In</Link>
         </li>,
@@ -24,12 +24,14 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-light">
-        <Link to="/" className="navbar-brand">IDK WEBAPP</Link>
-        <ul className="nav navbar-nav">
-          {this.renderLinks()}
-        </ul>
-      </nav>
+      <div className="container">
+        <nav className="navbar navbar-light">
+          <Link to="/" className="navbar-brand">IDK WEBAPP</Link>
+          <ul className="nav navbar-nav">
+            {this.renderLinks()}
+          </ul>
+        </nav>
+      </div>
     );
   }
 }

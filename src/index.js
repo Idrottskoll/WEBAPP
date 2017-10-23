@@ -21,7 +21,7 @@ import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Signout from './components/auth/signout';
 import Feature from './components/feature';
-import Welcome from './components/welcome';
+import Hero from './components/hero';
 
 
 
@@ -41,7 +41,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
-        <IndexRoute component={Welcome} />
+        <IndexRoute component={Hero} />
         <Route path="feature" component={RequireAuth(Feature)} />
         <Route path="signin" component={Signin} />
         <Route path="signout" component={Signout} />
@@ -49,4 +49,4 @@ ReactDOM.render(
       </Route>
     </Router>
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.body-container'));

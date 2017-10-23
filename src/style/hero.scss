@@ -1,0 +1,19 @@
+@import "./index.scss";
+
+.hero-module {
+  background-color: $primaryColor;
+  height: 45.75em;
+  width: 100vw;
+  .hero-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-align: center;
+      .smaller-text {
+        font-size: 32px;
+      }
+    }
+  }
+}
