@@ -47,3 +47,6 @@ p {
   font-size: 14px;
   color: $primaryParagraphTextColor;
 }
+
+@import "_header";
+@import "_hero";

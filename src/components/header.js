@@ -8,15 +8,15 @@ class Header extends Component {
   renderLinks() {
     if (this.props.authenticated) {
       return <li className="nav-item">
-        <Link to="/signout" className="nav-link">Sign Out</Link>
+        <Link to="/signout" className="nav-link">Logga ut</Link>
       </li>
     } else {
       return [
         <li className="nav-item" key={1}>
-          <Link to="/signin" className="nav-link">Sign In</Link>
+          <Link to="/signin" className="nav-link">Logga in</Link>
         </li>,
         <li className="nav-item" key={2}>
-          <Link to="/signup" className="nav-link">Sign Up</Link>
+          <Link to="/signup" className="nav-link">Registera</Link>
         </li>
       ];
     }
@@ -24,14 +24,13 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="container">
-        <nav className="navbar navbar-light">
-          <Link to="/" className="navbar-brand">IDK WEBAPP</Link>
-          <ul className="nav navbar-nav">
+      <nav className="navbar navbar-light navbar-transparent">
+        <div className="container">
+          <ul className="navbar-nav ml-auto">
             {this.renderLinks()}
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     );
   }
 }
