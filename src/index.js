@@ -6,6 +6,9 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import reducers from './reducers';
 import { AUTH_USER } from './actions/types';
 
+// Import css
+// import '../style.css';
+
 //middleware
 import reduxThunk from 'redux-thunk';
 
