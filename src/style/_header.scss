@@ -13,4 +13,8 @@
   font-family: 'rift-soft', sans-serif;
   color: $secondaryTextColor;
   font-size: 18px;
+  &:hover {
+    color: $secondaryTextColor;
+    border-bottom: 1px solid $secondaryTextColor;
+  }
 }
