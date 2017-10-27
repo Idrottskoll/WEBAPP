@@ -1,0 +1,23 @@
+.module {
+  margin-top: 3em;
+  .title {
+    width: 80%;
+    margin-bottom: 3em;
+  }
+}
+
+.steps {
+  text-align: center;
+  .col-md-4 {
+    padding-right: .3rem !important;
+    padding-left: .3rem !important;
+    .step {
+      background-color: $secondaryBackgroundColor;
+      padding: 1em;
+      .stepIcons {
+        width: 19%;
+        margin-bottom: .6em;
+      }
+    }
+  }
+}

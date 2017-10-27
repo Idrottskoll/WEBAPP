@@ -17,7 +17,7 @@ h1 {
 h2 {
   font-family: 'rift-soft', sans-serif;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 38px;
   color: $primaryColor;
 }
 
@@ -50,3 +50,4 @@ p {
 
 @import "_header";
 @import "_hero";
+@import "_how_does_it_work";
