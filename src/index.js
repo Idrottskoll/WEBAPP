@@ -24,6 +24,7 @@ import Feature from './components/feature';
 import Hero from './components/hero';
 import HowDoesItWork from './components/how_does_it_work';
 import About from './components/about';
+import CaseSlider from './components/caseSlider';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);

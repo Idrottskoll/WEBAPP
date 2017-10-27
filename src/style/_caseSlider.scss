@@ -1,0 +1,12 @@
+.col-md-2 {
+  padding-right: .2rem !important;
+  padding-left: .2rem !important;
+  .case {
+    background-color: $secondaryBackgroundColor;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
