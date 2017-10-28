@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { browserHistory } from 'react-router';
-import { ROOT_URL, SPECIAL_TOKEN, SIGNIN_URL } from './config'
+import { ROOT_URL, SPECIAL_TOKEN, SignIn_URL } from './config'
 import { 
   AUTH_USER,
   UNAUTH_USER,
@@ -8,11 +8,11 @@ import {
   FETCH_MESSAGE
  } from './types';
 
-export function signinUser({ email, password}) {
+export function SignInUser({ email, password}) {
   //access to redax-dispatch is inside this function
   return function (dispatch) {
     //submit email/pasword to server
-    axios.post(ROOT_URL + SIGNIN_URL, { email, password })
+    axios.post(ROOT_URL + SignIn_URL, { email, password })
       //if request is good
       .then(response => {
         /*update state to indicate user is authenticaded false->true,

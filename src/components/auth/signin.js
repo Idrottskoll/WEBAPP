@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { reduxForm } from 'redux-form';
 import * as actions from '../../actions';
 
-class Signin extends Component {
+class SignIn extends Component {
 
   handleFormSubmit({ email, password }) {
-    //verify email and password 
-    this.props.signinUser({ email, password });
+    //verify email and password
+    this.props.signInUser({ email, password });
   }
 
   renderAlert() {
@@ -22,7 +22,7 @@ class Signin extends Component {
   render() {
     //insert email and password to reduxform from props
     const { handleSubmit, fields: { email, password }} = this.props;
-    
+
 
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
@@ -51,4 +51,4 @@ function mapStateToProps(state) {
 export default reduxForm({
   form: 'signin',
   fields: ['email', 'password'],
-}, mapStateToProps, actions)(Signin);
+}, mapStateToProps, actions)(SignIn);
