@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import HowDoesItWork from '../components/HowDoesItWork';
 import About from '../components/About';
 import CaseSlider from '../components/CaseSlider';
+import Footer from '../components/Footer';
 
 export default class HomeScreen extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class HomeScreen extends Component {
         <HowDoesItWork />
         <About />
         <CaseSlider />
+        <Footer />
         {this.props.children}
       </div>
     );

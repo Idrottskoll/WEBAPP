@@ -1,0 +1,15 @@
+.footer {
+  background-color: $primaryColor;
+  margin-top: 6em;
+  h5 {
+    margin-top: 2em;
+    color: $secondaryTextColor;
+  }
+  p {
+    margin-bottom: 2em;
+    color: $secondaryTextColor;
+  }
+  .right-align {
+    text-align: right;
+  }
+}
