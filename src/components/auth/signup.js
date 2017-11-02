@@ -32,8 +32,18 @@ class SignUp extends Component {
 
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+        <div className="forms">
+          <fieldset className="form-group">
+            <label>För- och efternamn:</label>
+            <input {...name} className="form-control" />
+            {name.touched &&
+              name.error &&
+              <div className="error">
+                {name.error}
+              </div>}
+          </ fieldset>
         <fieldset className="form-group">
-          <label>Email:</label>
+          <label>E-post adress:</label>
           <input {...email} className="form-control" />
           {email.touched &&
             email.error &&
@@ -42,16 +52,7 @@ class SignUp extends Component {
             </div>}
         </ fieldset>
         <fieldset className="form-group">
-          <label>Name:</label>
-          <input {...name} className="form-control" />
-          {name.touched &&
-            name.error &&
-            <div className="error">
-              {name.error}
-            </div>}
-        </ fieldset>
-        <fieldset className="form-group">
-          <label>Password:</label>
+          <label>Lösenord:</label>
           <input {...password} type="password" className="form-control" />
           {/* if inputfield has been touched and there is a error return div */}
           {password.touched &&
@@ -61,7 +62,7 @@ class SignUp extends Component {
             </div>}
         </ fieldset>
         <fieldset className="form-group">
-          <label>Password Confirm:</label>
+          <label>Upprepa lösenord:</label>
           <input {...passwordConfirmation} type="password" className="form-control" />
           {passwordConfirmation.touched &&
             passwordConfirmation.error &&
@@ -71,8 +72,9 @@ class SignUp extends Component {
         </ fieldset>
         {this.renderAlert()}
         <button action="submit" className="btn btn-primary">
-          Sign Up!
+          Registrera
         </button>
+      </div>
       </form>
     );
   }
@@ -84,20 +86,20 @@ function validate(formProps) {
   const errors = {};
 
   if (!formProps.email) {
-    errors.email = 'Please enter an email';
+    errors.email = 'Var vänlig skriv in din e-post adress';
   }
   if (!formProps.name) {
-    errors.name = 'Please enter an name';
+    errors.name = 'Var vänlig skriv in ditt namn';
   }
   if (!formProps.password) {
-    errors.password = 'Please enter an password';
+    errors.password = 'Var vänlig skriv in ditt lösenord';
   }
   if (!formProps.passwordConfirmation) {
-    errors.passwordConfirmation = 'Please enter an passwordConfirmation';
+    errors.passwordConfirmation = 'Var vänlig skriv in ditt namn igen';
   }
 
   if (formProps.password !== formProps.passwordConfirmation) {
-    errors.password = 'Passwords must match';
+    errors.password = 'Lösenorden måste matcha med varandra';
   }
 
   return errors;

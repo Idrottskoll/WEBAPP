@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
+import Modal from './Modal';
 
 
 class Header extends Component {
@@ -24,6 +25,8 @@ class Header extends Component {
 
   render() {
     return (
+      <div>
+      <Modal />
       <nav className="navbar navbar-light navbar-transparent">
         <div className="container">
           <ul className="navbar-nav">
@@ -45,6 +48,7 @@ class Header extends Component {
           </ul>
         </div>
       </nav>
+      </div>
     );
   }
 }

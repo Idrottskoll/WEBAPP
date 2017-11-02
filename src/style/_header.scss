@@ -26,3 +26,25 @@ ul.navbar-nav.ml-auto {
   width: 20%;
   float: right;
 }
+
+.forms {
+  width: 50%;
+  float: right;
+  margin: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  button {
+    background-color: $primaryColor;
+    border: none;
+    font-family: 'rift-soft', sans-serif;
+    color: $secondaryTextColor;
+    font-size: 19px;
+    width: 100%;
+  }
+  .form-control {
+    font-size: 14px;
+    &:focus {
+      border-color: $primaryColor;
+    }
+  }
+}

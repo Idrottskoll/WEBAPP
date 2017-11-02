@@ -6,7 +6,7 @@ class SignIn extends Component {
 
   handleFormSubmit({ email, password }) {
     //verify email and password
-    this.props.signInUser({ email, password });
+    this.props.SignInUser({ email, password });
   }
 
   renderAlert() {
@@ -26,18 +26,20 @@ class SignIn extends Component {
 
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+        <div className="forms">
         <fieldset className="form-group">
-          <label>Email:</label>
+          <label>E-post adress:</label>
           <input {...email} className="form-control" />
         </ fieldset>
         <fieldset className="form-group">
-          <label>Password:</label>
+          <label>Lösenord:</label>
           <input {...password} type="password" className="form-control" />
         </ fieldset>
         {this.renderAlert()}
         <button action="submit" className="btn btn-primary">
-          Sign in
+          Logga in
         </button>
+      </div>
       </form>
     )
   }
