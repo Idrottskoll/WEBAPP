@@ -26,6 +26,20 @@ class Header extends Component {
     return (
       <nav className="navbar navbar-light navbar-transparent">
         <div className="container">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="#">Hem</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Hur fungerar det?</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Om Idrottskoll</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Kontakt</a>
+            </li>
+          </ul>
           <ul className="navbar-nav ml-auto">
             {this.renderLinks()}
           </ul>
