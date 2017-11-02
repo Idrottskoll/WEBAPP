@@ -8,7 +8,6 @@ export default class App extends Component {
       <div>
         <LoggedInUser />
         {/* <HomeScreen /> */}
-
         {this.props.children}
       </div>
     );

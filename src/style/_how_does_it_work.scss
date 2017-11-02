@@ -15,6 +15,10 @@
     .step {
       background-color: $secondaryBackgroundColor;
       padding: 1em;
+      &:hover {
+        background-color: $primaryBackgroundColor;
+        cursor: pointer;
+      }
       .stepIcons {
         width: 19%;
         margin-bottom: .6em;
