@@ -32,4 +32,12 @@
       background-color: $secondaryBackgroundColor;
     }
   }
+  .video-block {
+    background-color: $secondaryBackgroundColor;
+    width: 100%;
+    height: 200px;
+  }
+  .video-description {
+    margin-top: 1em;
+  }
 }
