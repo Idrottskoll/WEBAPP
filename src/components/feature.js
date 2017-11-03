@@ -30,7 +30,6 @@ class Feature extends Component {
           Videos: {this.renderVideos()} */}
       </div>
     )};
-
   }
 
   render() {
