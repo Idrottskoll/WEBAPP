@@ -4,7 +4,6 @@ import * as actions from '../actions';
 import _ from 'lodash';
 import ProfileNavigator from './ProfileNavigator';
 
-
 class Feature extends Component {
   componentWillMount() {
     //input what to fetch
