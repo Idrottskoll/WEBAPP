@@ -20,6 +20,14 @@ class MyProfile extends Component {
         </div>
     )};
   }
+  renderName() {
+    if (this.props.message) {
+      return (
+        <div>
+          <h3 className="margin-top">{this.props.message.name}</h3>
+        </div>
+    )};
+  }
 
   render(){
     console.log(this.props.message);
@@ -28,9 +36,9 @@ class MyProfile extends Component {
       <div className="container profile">
         <div className="col-md-12">
           <h2>Min profil </h2>
-          <h3 className="margin-top">Mina uppgifter</h3>
         </div>
         <div className="col-md-6 forms-inlogged">
+          <h3 className="margin-top">Mina uppgifter</h3>
           {this.renderMessage()}
           <label>Adress:</label>
           <input className="form-control" />
@@ -41,6 +49,15 @@ class MyProfile extends Component {
           <button action="submit" className="btn btn-primary">
             Uppdatera profil
           </button>
+        </div>
+        <div className="col-md-6">
+          <div className="profile-image">
+            {this.renderName()}
+            <div className="image-block"></div>
+            <button action="submit" className="btn btn-primary">
+              Uppdatera bild
+            </button>
+          </div>
         </div>
       </div>
     );

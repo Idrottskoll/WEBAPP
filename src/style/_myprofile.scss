@@ -1,7 +1,7 @@
 .profile {
   margin-top: 3em;
   .margin-top {
-    margin-top: 1em;
+   margin-top: 1em;
   }
   button {
     background-color: $primaryColor;
@@ -20,6 +20,16 @@
       &:focus {
         border-color: $primaryColor;
       }
+    }
+  }
+  .profile-image {
+    width: 250px;
+    float: right;
+    text-align: right;
+    .image-block {
+      width: 100%;
+      height: 250px;
+      background-color: $secondaryBackgroundColor;
     }
   }
 }
