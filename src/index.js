@@ -22,6 +22,10 @@ import Hero from './components/Hero';
 import HowDoesItWork from './components/HowDoesItWork';
 import About from './components/About';
 import CaseSlider from './components/CaseSlider';
+import ProfileNavigator from './components/ProfileNavigator';
+import MyProfile from './components/MyProfile';
+import MyVideos from './components/MyVideos';
+import NewOrder from './components/NewOrder';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
@@ -42,6 +46,9 @@ ReactDOM.render(
       <Route path="SignIn" component={SignIn} />
       <Route path="SignOut" component={SignOut} />
       <Route path="SignUp" component={SignUp} />
+      <Route path="MyProfile" component={MyProfile} />
+      <Route path="MyVideos" component={MyVideos} />
+      <Route path="NewOrder" component={NewOrder} />
       </Route>
     </Router>
   </Provider>
