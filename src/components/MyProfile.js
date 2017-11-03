@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 import _ from 'lodash';
 import Feature from './Feature';
+import Footer from './Footer';
 
 class MyProfile extends Component {
   componentWillMount() {
@@ -33,6 +34,7 @@ class MyProfile extends Component {
     console.log(this.props.message);
     // console.log(this.props.message.name);
     return(
+      <div>
       <div className="container profile">
         <div className="col-md-12">
           <h2>Min profil </h2>
@@ -59,6 +61,8 @@ class MyProfile extends Component {
             </button>
           </div>
         </div>
+      </div>
+      <Footer />
       </div>
     );
   }
