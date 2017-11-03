@@ -1,0 +1,25 @@
+.profile {
+  margin-top: 3em;
+  .margin-top {
+    margin-top: 1em;
+  }
+  button {
+    background-color: $primaryColor;
+    border: none;
+    font-family: 'rift-soft', sans-serif;
+    color: $secondaryTextColor;
+    font-size: 19px;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .forms-inlogged {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    .form-control {
+      margin-bottom: .5em;
+      &:focus {
+        border-color: $primaryColor;
+      }
+    }
+  }
+}
