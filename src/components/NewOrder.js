@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
+import ProfileNavigator from './ProfileNavigator';
+import Header from './Header';
+
 
 class NewOrder extends Component {
   render(){
     return(
       <div>
+      <Header />
+      <ProfileNavigator />
       <div className="container profile">
         <div className="col-md-12">
           <h2>Beställ ny video</h2>

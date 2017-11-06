@@ -1,8 +1,8 @@
 .navbar {
-  background-color: $primaryColor;
+  background-color: transparent;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 2000;
   border-radius: 0 !important;
   .container {
     .navbar-nav {
@@ -15,7 +15,7 @@
   font-family: 'rift-soft', sans-serif;
   color: $secondaryTextColor;
   font-size: 18px;
-  border-bottom: 1px solid $primaryColor;
+  border-bottom: 1px solid transparent;
   &:hover {
     color: $secondaryTextColor;
     border-bottom: 1px solid $secondaryTextColor;

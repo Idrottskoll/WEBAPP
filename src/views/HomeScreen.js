@@ -5,8 +5,10 @@ import HowDoesItWork from '../components/HowDoesItWork';
 import About from '../components/About';
 import CaseSlider from '../components/CaseSlider';
 import Footer from '../components/Footer';
+import SignIn from '../components/auth/SignIn';
 
-export default class HomeScreen extends Component {
+
+class HomeScreen extends Component {
   render() {
     return (
       <div>
@@ -21,3 +23,5 @@ export default class HomeScreen extends Component {
     );
   }
 }
+
+export default HomeScreen;

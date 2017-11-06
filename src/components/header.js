@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import Modal from './Modal';
 
-
 class Header extends Component {
   //handle login/ logout html
   renderLinks() {

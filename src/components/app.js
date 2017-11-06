@@ -6,8 +6,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <LoggedInUser />
-        {/* <HomeScreen /> */}
+        {/* <LoggedInUser /> */}
+        <HomeScreen />
         {this.props.children}
       </div>
     );

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
+import Header from './Header';
+import ProfileNavigator from './ProfileNavigator';
 
 class MyVideos extends Component {
   render(){
     return(
       <div>
+      <Header />
+      <ProfileNavigator />
       <div className="container profile">
         <div className="col-md-12">
           <h2>Mina videos</h2>

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { browserHistory } from 'react-router';
 import { ROOT_URL, SPECIAL_TOKEN, SignIn_URL } from './config'
-import { 
+import {
   AUTH_USER,
   UNAUTH_USER,
   AUTH_ERROR,
@@ -21,8 +21,8 @@ export function SignInUser({ email, password}) {
         //save the jwt token to lokalstore
         localStorage.setItem('token', SPECIAL_TOKEN + response.data.token);
         //redirect user
-        browserHistory.push('/feature');
-
+        browserHistory.push('/LoggedInUser');
+        
 
       })
       //if request is bad
@@ -41,18 +41,18 @@ export function signoutUser() {
   return { type: UNAUTH_USER };
 }
 
-//signup 
+//signup
 export function signupUser({ email, name, password, passwordConfirmation }) {
   return function (dispatch) {
     axios.post(`${ROOT_URL}register`, { email, name, password, passwordConfirmation })
       .then(response => {
         dispatch({ type: AUTH_USER });
         localStorage.setItem('token', SPECIAL_TOKEN + response.data.token);
-        browserHistory.push('/feature');
+        browserHistory.push('/LoggedInUser');
       })
       .catch(response => {
         dispatch(authError('Error with signup, username is taken?')
-      )}); 
+      )});
   }
 }
 
@@ -74,7 +74,7 @@ export function fetchMessage(data) {
         type: FETCH_MESSAGE,
         payload: response.data
       });
-      
+
     });
   }
 }

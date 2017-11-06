@@ -4,6 +4,8 @@ import * as actions from '../actions';
 import _ from 'lodash';
 import Feature from './Feature';
 import Footer from './Footer';
+import Header from './Header';
+import ProfileNavigator from './ProfileNavigator';
 
 class MyProfile extends Component {
   componentWillMount() {
@@ -35,6 +37,8 @@ class MyProfile extends Component {
     // console.log(this.props.message.name);
     return(
       <div>
+      <Header />
+      <ProfileNavigator />
       <div className="container profile">
         <div className="col-md-12">
           <h2>Min profil </h2>
