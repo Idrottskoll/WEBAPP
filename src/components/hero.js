@@ -7,8 +7,9 @@ class Hero extends Component {
           <video src={'src/assets/video/background.mov'} autoPlay loop></video>
 
       <div className="hero-module">
-
         <div className="hero-content">
+          <div className="logotype"></div>
+          <br />
           <h1>
             Idrottskoll <br />
               <span className="smaller-text">

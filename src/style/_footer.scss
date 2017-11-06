@@ -1,13 +1,25 @@
 .footer {
   background-color: $primaryColor;
   margin-top: 6em;
+  .bothBadge {
+    display: inline-block;
+    margin-bottom: 2em;
+    .badgeIcons {
+      width: 30%;
+    }
+    .apple {
+      width: 23% !important;
+    }
+  }
   h5 {
     margin-top: 2em;
     color: $secondaryTextColor;
   }
   p {
-    margin-bottom: 2em;
     color: $secondaryTextColor;
+    .small-text {
+      font-size: 12px;
+    }
   }
   .right-align {
     text-align: right;

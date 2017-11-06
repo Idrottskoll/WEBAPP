@@ -22,6 +22,15 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    .logotype {
+      background-image: url('./src/assets/img/logotype.png');
+      background-size: 100%;
+      width: 220px;
+      height: 40%;
+      background-repeat: no-repeat;
+      margin-top: 2em;
+    }
     h1 {
       text-align: center;
       .smaller-text {
