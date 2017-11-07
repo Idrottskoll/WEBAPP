@@ -7,9 +7,14 @@ class Header extends Component {
   //handle login/ logout html
   renderLinks() {
     if (this.props.authenticated) {
-      return <li className="nav-item">
-        <Link to="/signout" className="nav-link">Logga ut</Link>
-      </li>
+      return [
+        <li className="nav-item">
+          <Link to="/LoggedInUser" className="nav-link">Mina sidor</Link>
+        </li>,
+        <li className="nav-item">
+          <Link to="/signout" className="nav-link">Logga ut</Link>
+        </li>
+      ]
     } else {
       return [
         <li className="nav-item" key={1}>
@@ -30,7 +35,7 @@ class Header extends Component {
         <div className="container">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">Hem</a>
+              <Link to="/" className="nav-link">Hem</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Hur fungerar det?</a>
