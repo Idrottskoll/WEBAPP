@@ -5,7 +5,8 @@ import {
   AUTH_USER,
   UNAUTH_USER,
   AUTH_ERROR,
-  FETCH_MESSAGE
+  FETCH_MESSAGE,
+  FETCH_USER_DATA
  } from './types';
 
 export function SignInUser({ email, password}) {
@@ -22,7 +23,7 @@ export function SignInUser({ email, password}) {
         localStorage.setItem('token', SPECIAL_TOKEN + response.data.token);
         //redirect user
         browserHistory.push('/LoggedInUser');
-        
+
 
       })
       //if request is bad
@@ -75,6 +76,20 @@ export function fetchMessage(data) {
         payload: response.data
       });
 
+    });
+  }
+}
+
+export function fetchUserData(data) {
+  return function(dispatch) {
+    axios.get(ROOT_URL + data, {
+      headers: { Authorization: localStorage.getItem('token') }
+    })
+    .then( response => {
+      dispatch({
+        type: FETCH_USER_DATA,
+        payload: response.data
+      });
     });
   }
 }
