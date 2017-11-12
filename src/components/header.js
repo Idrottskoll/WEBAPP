@@ -1,17 +1,39 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import Modal from './Modal';
-// import Modal from 'react-modal';
+import SignIn from './auth/SignIn';
+import Modal from 'react-modal';
 
 class Header extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = '#f00';
+  }
+
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
 
   //handle login/ logout html
   renderLinks() {
     if (this.props.authenticated) {
-
       return [
-
         <li className="nav-item" key={1}>
           <Link to="/LoggedInUser" className="nav-link">Mina sidor</Link>
         </li>,
@@ -22,7 +44,8 @@ class Header extends Component {
     } else {
       return [
         <li className="nav-item" key={1}>
-          <Link to="/SignIn" className="nav-link">Logga in</Link>
+          <Link onClick={this.openModal} className="nav-link">Logga in</Link>
+
         </li>,
         <li className="nav-item" key={2}>
           <Link to="/signup" className="nav-link">Registera</Link>
@@ -30,12 +53,6 @@ class Header extends Component {
       ];
     }
   }
-
-  // componentDidMount() {
-  //   const b = document.getElementById("div");
-  //   console.log(b);
-  //   b.className += " background";
-  // }
 
 componentDidMount() {
   window.addEventListener('background', this.handleScroll);
@@ -54,7 +71,7 @@ handleScroll(event) {
   render() {
     return (
       <div>
-      <Modal />
+      {/* <Modal /> */}
       <nav className="navbar navbar-light navbar-transparent" id="div">
         <div className="container">
           <ul className="navbar-nav">
@@ -76,6 +93,11 @@ handleScroll(event) {
           </ul>
         </div>
       </nav>
+      <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} >
+        <h2 ref={subtitle => this.subtitle = subtitle}>Logga in</h2>
+        <button onClick={this.closeModal}>close</button>
+        <SignIn />
+      </Modal>
       </div>
     );
   }
