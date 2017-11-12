@@ -7,7 +7,7 @@ class HowDoesItWork extends Component {
         <div className="row module">
           <div className="col-md-12 title">
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
+              En snabb och enkel tjänst för dig som vill utveckla din idrott genom video.
             </h2>
           </div>
         </div>
@@ -19,7 +19,7 @@ class HowDoesItWork extends Component {
                 1. Lägg order
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                Lägg snabbt och enkelt in en order genom att välja vilken klubb du vill filma samt tid och bana. Det är kostnadsfritt och en order kan vara upp till 3 timmar.
               </p>
             </div>
           </div>
@@ -30,7 +30,7 @@ class HowDoesItWork extends Component {
                 2. Videon filmas
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                Din orders kommer nu att bearbetas och filma den idrottshändelsen som du önskar. Därefter kommer den att laddas upp till hemsidan och appen.
               </p>
             </div>
           </div>
@@ -41,7 +41,7 @@ class HowDoesItWork extends Component {
                 3. Titta på videon
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                När videon har bearbetas så finns den tillgänglig när du loggar in på hemsidan eller appen. Videon finns tillgänglig var du än är!
               </p>
             </div>
           </div>

@@ -73,9 +73,9 @@ export function fetchMessage(data) {
     .then( response => {
       dispatch({
         type: FETCH_MESSAGE,
+        // type: FETCH_USER_DATA,
         payload: response.data
       });
-
     });
   }
 }

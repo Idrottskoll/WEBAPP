@@ -7,22 +7,54 @@ import Header from './Header';
 import ProfileNavigator from './ProfileNavigator';
 
 class MyVideos extends Component {
+  constructor(props) {
+    super(props);
+   }
+
   componentWillMount() {
     this.props.fetchMessage('user');
   }
 
-  renderInformation() {
-    console.log(this.props);
-    if (this.props.message) {
-      return (
-        <div className="video-description">
-          <h4>SM i Rugby</h4>
-          <p>
-            {/* {this.props.message.name} */}
-          </p>
-        </div>
-    )};
-  }
+  // renderInformation() {
+  // if (this.props.message) {
+  //    this.props.message.video.map(video => {
+  //     console.log(video.name);
+  //     return (<p key={video.name}>{video.name}</p>)
+  //     }
+  //   }
+
+
+//   return (
+//     <div className="video-description">
+//       <h4>SM i Rugby</h4>
+//       <p>
+//       {test}
+//       </p>
+//     </div>
+// )};
+
+  // renderInformation(array) {
+  //   // const info = this.props.message;
+  //   // console.log(info);
+  // this.props.message.video.map(video => (
+  //   console.log(video);
+  // ));
+  //   if (info) {
+  //     return (
+  //       <div className="video-description">
+  //         <h4>SM i Rugby</h4>
+  //         <p>
+  //           {/* {
+  //             this.props.message.map(function(video, i){
+  //               console.log('test');
+  //               return <li key={i}>Test</li>
+  //             })
+  //         // this.props.message.video
+  //         } */}
+  //         </p>
+  //       </div>
+  //   )};
+  // }
 
   render(){
     return(
@@ -35,7 +67,9 @@ class MyVideos extends Component {
         </div>
         <div className="col-md-4">
           <div className="video-block"></div>
-          {this.renderInformation()}
+          {/* {this.renderInformation()} */}
+
+          {/* {renderInformation(props.data)} */}
         </div>
         <div className="col-md-4">
           <div className="video-block"></div>
@@ -73,7 +107,22 @@ class MyVideos extends Component {
 }
 
 function mapStateToProps(state){
-  return { message: state.auth.message };
+  return {
+    message: state.auth.message
+  };
 }
+
+
+
+// function mapStateToProps(state) {
+//   return{
+//     payload: state.map((item) => ({
+//       video: {
+//         name: item.video.name
+//       }
+//     }));
+//   }
+// }
+
 
 export default connect(mapStateToProps, actions)(MyVideos);

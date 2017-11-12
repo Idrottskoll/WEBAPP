@@ -6,6 +6,10 @@ $primaryBackgroundColor: #FFFFFF;
 $secondaryTextColor: #FFFFFF;
 $secondaryBackgroundColor: #F4F4F4;
 
+.background {
+  background-color: $primaryColor !important;
+}
+
 // Font styles
 h1 {
   font-family: 'rift-soft', sans-serif;
