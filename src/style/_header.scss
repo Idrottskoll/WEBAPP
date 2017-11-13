@@ -25,6 +25,7 @@
   color: $secondaryTextColor;
   font-size: 18px;
   border-bottom: 1px solid transparent;
+  cursor: pointer;
   &:hover {
     color: $secondaryTextColor;
     border-bottom: 1px solid $secondaryTextColor;
@@ -42,6 +43,9 @@ ul.navbar-nav.ml-auto {
   margin-top: 20%;
   border-bottom: 1px solid $primaryColor;
   padding-bottom: 20px;
+  &:focus, &:visited, &:active {
+    outline: none;
+  }
 }
 
 .modal-button {
