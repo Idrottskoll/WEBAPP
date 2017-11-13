@@ -94,8 +94,8 @@ handleScroll(event) {
         </div>
       </nav>
       <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} >
-        <h2 ref={subtitle => this.subtitle = subtitle}>Logga in</h2>
-        <button onClick={this.closeModal}>close</button>
+        <button onClick={this.closeModal} className="modal-button" ></button>
+        <h2 className="modal-text" ref={subtitle => this.subtitle = subtitle}>Logga in</h2>
         <SignIn />
       </Modal>
       </div>

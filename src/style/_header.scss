@@ -36,12 +36,38 @@ ul.navbar-nav.ml-auto {
   float: right;
 }
 
+.modal-text {
+  width: 510px;
+  margin: 0 auto;
+  margin-top: 20%;
+  border-bottom: 1px solid $primaryColor;
+  padding-bottom: 20px;
+}
+
+.modal-button {
+  border: 0;
+  background: transparent;
+  float: right;
+  background-image: url("./src/assets/img/cancel.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+
 .forms {
   width: 50%;
-  float: right;
   margin: 2em;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30vh;
   button {
     background-color: $primaryColor;
     border: none;
