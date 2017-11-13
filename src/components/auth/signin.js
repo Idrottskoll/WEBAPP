@@ -39,6 +39,9 @@ class SignIn extends Component {
         <button action="submit" className="btn btn-primary">
           Logga in
         </button>
+        <a href="#">
+          <p className="italic password">Glömt ditt lösenord?</p>
+        </a>
       </div>
       </form>
     )

@@ -52,6 +52,10 @@ p {
   color: $primaryParagraphTextColor;
 }
 
+.italic {
+  font-style: italic;
+}
+
 @import "_header";
 @import "_hero";
 @import "_how_does_it_work";
