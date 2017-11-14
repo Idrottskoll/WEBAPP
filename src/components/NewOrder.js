@@ -28,9 +28,11 @@ class NewOrder extends Component {
         <div className="col-md-6 margin-top">
           <h3>Hur fungerar det?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br /><br />
+            Lägg snabbt och enklet in en order genom att välja klubb, datum och bana som du kommer att spela på. Om din match eller träning redan är inspelad kan du välja att klicka i rutan "Inspelade matcher". Det är kostnadsfritt att lägga en order och den kan vara upp till 3 timmars speltid. <br /><br />
 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Din orders kommer nu att bearbetas och filma den idrottshändelsen som du önskat. Därefter kommer den att laddas upp till hemsidan och appen. <br /><br />
+
+            Nu kan nu enklet logga in på din användare oavsätt vart du befinner dig och kolla på din inspelade video. Om du inte var registerard innan så har ett medelande skickats till din epost adress om hur du kan gå vidare och registrera dig. Pris på att köpa sin inspelade idrottshändels finner du här.
           </p>
         </div>
       </div>
