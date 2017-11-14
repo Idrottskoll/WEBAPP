@@ -18,6 +18,9 @@ class About extends Component {
             </p>
           </div>
         </div>
+        <div className="order-video">
+          <h5>Intresserad av att lägga en beställning? <a href="#">Tryck här</a></h5>
+        </div>
       </div>
     );
   }

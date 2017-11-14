@@ -13,10 +13,12 @@
   .col-md-4 {
     padding-right: .3rem !important;
     padding-left: .3rem !important;
+    .large {
+      height: 230px;
+    }
     .step {
       background-color: $secondaryBackgroundColor;
       padding: 1em;
-      height: 230px;
       .hover {
         &:hover {
           background-color: $primaryBackgroundColor;

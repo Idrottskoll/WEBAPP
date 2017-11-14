@@ -13,7 +13,7 @@ class HowDoesItWork extends Component {
         </div>
         <div className="row steps">
           <div className="col-md-4">
-            <div className="step">
+            <div className="step large">
               <img src={'src/assets/img/stepOne.png'} className="stepIcons"/>
               <h3>
                 1. Lägg order
@@ -24,7 +24,7 @@ class HowDoesItWork extends Component {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="step">
+            <div className="step large">
               <img src={'src/assets/img/stepTwo.png'} className="stepIcons"/>
               <h3>
                 2. Videon filmas
@@ -35,7 +35,7 @@ class HowDoesItWork extends Component {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="step">
+            <div className="step large">
               <img src={'src/assets/img/stepThree.png'} className="stepIcons"/>
               <h3>
                 3. Titta på videon

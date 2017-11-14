@@ -11,7 +11,7 @@ class ProfileNavigator extends Component {
             <div className="col-md-4">
               <Link to="/MyProfile">
                 <div className="step hover">
-                  <img src={'src/assets/img/stepOne.png'} className="stepIcons"/>
+                  <img src={'src/assets/img/user.png'} className="stepIcons"/>
                   <h3>Min profil</h3>
                 </div>
               </Link>
@@ -27,7 +27,7 @@ class ProfileNavigator extends Component {
             <div className="col-md-4">
               <Link to="/MyVideos">
                 <div className="step hover">
-                  <img src={'src/assets/img/stepOne.png'} className="stepIcons"/>
+                  <img src={'src/assets/img/folder.png'} className="stepIcons"/>
                   <h3>Mina videos</h3>
                 </div>
               </Link>
