@@ -6,6 +6,7 @@ class About extends Component {
       <div className="about">
         <div className="container">
           <div className="col-md-4">
+            <img src={'src/assets/img/joakim.png'} className="joakim"/>
           </div>
           <div className="col-md-8">
             <h3>Om idrottskoll</h3>
