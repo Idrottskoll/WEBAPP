@@ -9,12 +9,14 @@
 .steps {
   text-align: center;
   margin-bottom: 3em;
+
   .col-md-4 {
     padding-right: .3rem !important;
     padding-left: .3rem !important;
     .step {
       background-color: $secondaryBackgroundColor;
       padding: 1em;
+      height: 230px;
       .hover {
         &:hover {
           background-color: $primaryBackgroundColor;

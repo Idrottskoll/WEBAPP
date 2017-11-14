@@ -9,7 +9,7 @@ export default class Footer extends Component {
             <div className="col-md-6">
               <h5>Ladda ner vår app!</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                I vår app får du tillgång till alla dina videos och kan enkelt beställa nya. Finns tillgänligt till både iOS och Android. Ladda ner och testa!
               </p>
               <div className="bothBadge">
                 <img src={'src/assets/img/app-store-badge.png'} className="badgeIcons apple"/>

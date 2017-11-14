@@ -17,12 +17,12 @@ export default class CaseSlider extends Component {
           <h2>Några turneringar som idrottskoll har filmat</h2>
         </div>
         <Slider {...settings}>
-          <div className="col-md-2"><div className="case"><h4>Junior sm 2016 i squash</h4></div></div>
-          <div className="col-md-2"><div className="case"><h4>Junior sm 2016 i squash</h4></div></div>
-          <div className="col-md-2"><div className="case"><h4>Junior sm 2016 i squash</h4></div></div>
-          <div className="col-md-2"><div className="case"><h4>Junior sm 2016 i squash</h4></div></div>
-          <div className="col-md-2"><div className="case"><h4>Junior sm 2016 i squash</h4></div></div>
-          <div className="col-md-2"><div className="case"><h4>Junior sm 2016 i squash</h4></div></div>
+          <div className="col-md-2"><div className="case"><h4>Junior SM 2016 i squash</h4></div></div>
+          <div className="col-md-2"><div className="case"><h4>Junior RM 2014 i tennis</h4></div></div>
+          <div className="col-md-2"><div className="case"><h4>Junior SM 2014 i tennis</h4></div></div>
+          <div className="col-md-2"><div className="case"><h4>Veteran SM 2016 i squash</h4></div></div>
+          <div className="col-md-2"><div className="case"><h4>Junior SM 2016 i tennis</h4></div></div>
+          <div className="col-md-2"><div className="case"><h4>Junior RM 2016 i tennis</h4></div></div>
         </Slider>
       </div>
     );
