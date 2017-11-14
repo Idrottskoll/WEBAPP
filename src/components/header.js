@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import SignIn from './auth/SignIn';
+import SignUp from './auth/SignUp';
 import Modal from 'react-modal';
 
 class Header extends Component {
@@ -9,7 +10,8 @@ class Header extends Component {
     super();
 
     this.state = {
-      modalIsOpen: false
+      modalIsOpen: false,
+      type: null
     };
 
     this.openModal = this.openModal.bind(this);
@@ -17,8 +19,10 @@ class Header extends Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  openModal() {
+  openModal(e) {
     this.setState({modalIsOpen: true});
+    // Set if SignIn or SignUp modal should be displayed
+    this.setState({ type: e.target.id })
   }
 
   afterOpenModal() {
@@ -30,7 +34,6 @@ class Header extends Component {
     this.setState({modalIsOpen: false});
   }
 
-  //handle login/ logout html
   renderLinks() {
     if (this.props.authenticated) {
       return [
@@ -44,11 +47,10 @@ class Header extends Component {
     } else {
       return [
         <li className="nav-item" key={1}>
-          <Link onClick={this.openModal} className="nav-link">Logga in</Link>
-
+          <Link id="signIn" onClick={this.openModal} className="nav-link">Logga in</Link>
         </li>,
         <li className="nav-item" key={2}>
-          <Link to="/signup" className="nav-link">Registera</Link>
+          <Link id="signUp" onClick={this.openModal} className="nav-link">Registera</Link>
         </li>
       ];
     }
@@ -95,8 +97,10 @@ handleScroll(event) {
       </nav>
       <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} >
         <button onClick={this.closeModal} className="modal-button" ></button>
-        <h2 className="modal-text" ref={subtitle => this.subtitle = subtitle}>Logga in</h2>
-        <SignIn />
+        {this.state.type === 'signIn' ?   <h2 className="modal-text" ref={subtitle => this.subtitle = subtitle}>Logga in</h2>
+        :   <h2 className="modal-text" ref={subtitle => this.subtitle = subtitle}>Registrera</h2>}
+        {this.state.type === 'signIn' ? <SignIn /> : <SignUp /> }
+
       </Modal>
       </div>
     );
