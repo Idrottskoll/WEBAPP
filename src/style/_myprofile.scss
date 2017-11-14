@@ -29,7 +29,10 @@
     .image-block {
       width: 100%;
       height: 250px;
-      background-color: $secondaryBackgroundColor;
+      // background-color: $secondaryBackgroundColor;
+      background-image: url("https://www.idrottskoll.se/avatar/default.png");
+      background-repeat: none;
+      background-size: 250px 250px;
     }
   }
   .video-block {
